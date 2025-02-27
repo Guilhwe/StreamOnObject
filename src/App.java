@@ -1,3 +1,5 @@
+import es.com.Alura.PelisOn.modelos.Peli;
+
 public class App {
     public static void main(String[] args) throws Exception {
         Peli pelicula1 = new Peli();
@@ -11,6 +13,6 @@ public class App {
         pelicula1.puntuar(7.5);
         pelicula1.puntuar(8.0);
         System.out.println(pelicula1.gettotalEvaluaciones());
-
+        
     }
 }
