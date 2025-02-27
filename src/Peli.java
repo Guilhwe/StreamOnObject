@@ -2,9 +2,13 @@ public class Peli {
     String nombre;
     int añoDeEstreno;
     boolean incluido;
-    double sumaNotas;
-    int totalEvaluaciones;
+    private double sumaNotas;
+    private int totalEvaluaciones;
     int duracionEnMinutos;
+
+    int gettotalEvaluaciones() {
+        return totalEvaluaciones;
+    }
 
     void info(){
         System.out.println("Nombre: " + nombre);
@@ -23,5 +27,6 @@ public class Peli {
     double notaMedia() {
         return sumaNotas / totalEvaluaciones;
     }
+
         
 }

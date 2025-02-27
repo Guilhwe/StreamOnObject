@@ -9,6 +9,8 @@ public class App {
         pelicula1.puntuar(8.5);
         pelicula1.puntuar(9.0);
         pelicula1.puntuar(7.5);
-        pelicula1.info();
+        pelicula1.puntuar(8.0);
+        System.out.println(pelicula1.gettotalEvaluaciones());
+
     }
 }
