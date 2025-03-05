@@ -57,7 +57,7 @@ public class Produccion {
 
 
     public void info(){
-        
+        System.out.println("************************************");
         System.out.println("Nombre: " + nombre);
         System.out.println("Año de estreno: " + añoDeEstreno);
         System.out.println("Incluido en StreamOn: " + incluido);
@@ -70,7 +70,9 @@ public class Produccion {
             Peli peli = (Peli) this;//usa el objeto en cuestion
             System.out.println("Duración en minutos: " + getDuracionEnMinutos());
             System.out.println("Director: " + peli.getDirector());
+            System.out.println("************************************");
             System.out.println();
+            
             
         } else if (this instanceof Serie) {
             //toma el objeto que llama al metodo y lo convierte en un objeto de la clase Serie
@@ -80,7 +82,9 @@ public class Produccion {
             System.out.println("Activa: " + serie.getActiva());
             System.out.println("Minutos por capitulo: " + serie.getMinutosPorCapitulo());
             System.out.println("Duración en minutos toal: " + getDuracionEnMinutos());
+            System.out.println("************************************");
             System.out.println();
+            
         }
     }
 
