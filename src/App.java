@@ -6,27 +6,27 @@ public class App {
         Peli pelicula1 = new Peli();
         pelicula1.setNombre("Un monstruo viene a verme");
         pelicula1.setAñoDeEstreno(2016);
-        pelicula1.getIncluido();
         pelicula1.setDuracionEnMinutos(108);
         pelicula1.setDirector("J.A. Bayona");
-        pelicula1.info();
-
+        
         pelicula1.puntuar(8.5);
         pelicula1.puntuar(9.0);
         pelicula1.puntuar(7.5);
         pelicula1.puntuar(8.0);
-        System.out.println(pelicula1.getTotalEvaluaciones());
+        
         
         Serie serie1 = new Serie();
         serie1.setNombre("El baile de las luciérnagas");
         serie1.setAñoDeEstreno(2021);
-        serie1.getIncluido();
-        serie1.setDuracionEnMinutos(50);
+        
         serie1.setTemporadas(1);
         serie1.setCapitulos(8);
         serie1.setActiva(true);
+        
         serie1.setMinutosPorCapitulo(50);
-        serie1.info();
+         pelicula1.info();
+         serie1.info();
+        
         
     }
 }

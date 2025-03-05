@@ -22,6 +22,34 @@ public class Produccion {
     public void setAñoDeEstreno(int añoDeEstreno) {
         this.añoDeEstreno = añoDeEstreno;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getAñoDeEstreno() {
+        return añoDeEstreno;
+    }
+
+    public void setIncluido(boolean incluido) {
+        this.incluido = incluido;
+    }
+
+    public double getSumaNotas() {
+        return sumaNotas;
+    }
+
+    public void setSumaNotas(double sumaNotas) {
+        this.sumaNotas = sumaNotas;
+    }
+
+    public void setTotalEvaluaciones(int totalEvaluaciones) {
+        this.totalEvaluaciones = totalEvaluaciones;
+    }
+
+    public int getDuracionEnMinutos() {
+        return duracionEnMinutos;
+    }
     
     public void setDuracionEnMinutos(int duracionEnMinutos) {
         this.duracionEnMinutos = duracionEnMinutos;
@@ -35,12 +63,13 @@ public class Produccion {
         System.out.println("Incluido en StreamOn: " + incluido);
         System.out.println("Nota Media: " + notaMedia());
         System.out.println("Total de evaluaciones: " + totalEvaluaciones);
+        System.out.println("Duración en minutos: " + getDuracionEnMinutos());
         //Busca si el objeto es una instancia de la clase Peli
         if (this instanceof Peli) {
             //toma el objeto que llama al metodo y lo convierte en un objeto de la clase Peli
             Peli peli = (Peli) this;//usa el objeto en cuestion
             System.out.println("Director: " + peli.getDirector());
-            System.out.println("Duración en minutos: " + duracionEnMinutos);
+            
         } else if (this instanceof Serie) {
             //toma el objeto que llama al metodo y lo convierte en un objeto de la clase Serie
             Serie serie = (Serie) this;//usa el objeto en cuestion

@@ -37,4 +37,9 @@ public class Serie extends Produccion {
     public void setMinutosPorCapitulo(int minutosPorCapitulo) {
         this.minutosPorCapitulo = minutosPorCapitulo;
     }
+
+    @Override
+    public int getDuracionEnMinutos() {
+        return temporadas * capitulos * minutosPorCapitulo;
+    }
 }
