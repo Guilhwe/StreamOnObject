@@ -1,3 +1,4 @@
+import es.com.Alura.PelisOn.Calculos.CalculadoraDeTiempo;
 import es.com.Alura.PelisOn.modelos.Peli;
 import es.com.Alura.PelisOn.modelos.Serie;
 
@@ -22,11 +23,19 @@ public class App {
         serie1.setTemporadas(1);
         serie1.setCapitulos(8);
         serie1.setActiva(true);
-        
         serie1.setMinutosPorCapitulo(50);
-         pelicula1.info();
-         serie1.info();
-        
+
+    Peli pelicula2 = new Peli();
+    pelicula2.setNombre("Dos rubias de pelo en pecho");
+    pelicula2.setAñoDeEstreno(2004);
+    pelicula2.setDuracionEnMinutos(109);
+    pelicula2.setDirector("Keenen Ivory Wayans");
+
+    CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+    calculadora.añadirProduccion(pelicula1);
+    calculadora.añadirProduccion(serie1);
+    calculadora.añadirProduccion(pelicula2);
+    System.out.println("El tiempo total de visualización es de: " + calculadora.getTiempoTotal() + " minutos");
         
     }
 }
