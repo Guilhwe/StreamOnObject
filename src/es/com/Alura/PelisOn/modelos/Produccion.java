@@ -63,12 +63,14 @@ public class Produccion {
         System.out.println("Incluido en StreamOn: " + incluido);
         System.out.println("Nota Media: " + notaMedia());
         System.out.println("Total de evaluaciones: " + totalEvaluaciones);
-        System.out.println("Duración en minutos: " + getDuracionEnMinutos());
+        
         //Busca si el objeto es una instancia de la clase Peli
         if (this instanceof Peli) {
             //toma el objeto que llama al metodo y lo convierte en un objeto de la clase Peli
             Peli peli = (Peli) this;//usa el objeto en cuestion
+            System.out.println("Duración en minutos: " + getDuracionEnMinutos());
             System.out.println("Director: " + peli.getDirector());
+            System.out.println();
             
         } else if (this instanceof Serie) {
             //toma el objeto que llama al metodo y lo convierte en un objeto de la clase Serie
@@ -77,6 +79,8 @@ public class Produccion {
             System.out.println("Capitulos: " + serie.getCapitulos());
             System.out.println("Activa: " + serie.getActiva());
             System.out.println("Minutos por capitulo: " + serie.getMinutosPorCapitulo());
+            System.out.println("Duración en minutos toal: " + getDuracionEnMinutos());
+            System.out.println();
         }
     }
 
